@@ -1,0 +1,17 @@
+{
+  "name": "portfolio2",
+  "version": "0.0.1",
+  "authors": [
+    "xsobolx <masta.sable@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "sobol-aleksandr.ru",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
