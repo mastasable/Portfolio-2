@@ -1,0 +1,16 @@
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  color: #666666;
+  font-size: 4em; }
