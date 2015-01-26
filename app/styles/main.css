@@ -51,7 +51,6 @@ ul {
   margin-left: auto; }
 
 .main-menu {
-  width: 257px;
   float: left;
   position: relative;
   min-height: 1px;
@@ -102,6 +101,7 @@ ul {
     .header .header-inner .header-logo {
       margin-top: 35px; }
     .header .header-inner .header-menu {
+      margin-top: 35px;
       margin-right: 25px; }
       .header .header-inner .header-menu .header-menu__item {
         height: 47px;
@@ -113,82 +113,168 @@ ul {
           width: 100%; }
         .header .header-inner .header-menu .header-menu__item .vk {
           background: url(../images/vk.png) no-repeat; }
+        .header .header-inner .header-menu .header-menu__item .vk:hover {
+          background: url(../images/vk1.png) no-repeat; }
         .header .header-inner .header-menu .header-menu__item .github {
           background: url(../images/github.png) no-repeat; }
+        .header .header-inner .header-menu .header-menu__item .github:hover {
+          background: url(../images/github1.png) no-repeat; }
       .header .header-inner .header-menu .header-menu__item:first-child {
         margin-left: 0; }
 
-.main-menu .nav-menu {
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 20px; }
-  .main-menu .nav-menu .nav-menu__item {
-    position: relative;
-    padding: 20px 4px;
-    background-color: #eff3f7; }
-    .main-menu .nav-menu .nav-menu__item .link {
-      font-size: 20px;
-      color: #959aa8;
-      margin-left: 20px; }
-    .main-menu .nav-menu .nav-menu__item .link:hover {
-      color: #3ba8c0; }
-    .main-menu .nav-menu .nav-menu__item .current {
+.main-menu {
+  width: 26%; }
+  .main-menu .nav-menu {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px; }
+    .main-menu .nav-menu .nav-menu__item {
+      position: relative;
+      padding: 20px 4px;
+      background-color: #eff3f7; }
+      .main-menu .nav-menu .nav-menu__item .link {
+        font-size: 20px;
+        color: #959aa8;
+        margin-left: 20px; }
+      .main-menu .nav-menu .nav-menu__item .link:hover {
+        color: #3ba8c0; }
+      .main-menu .nav-menu .nav-menu__item .current {
+        background: #3ba8c0;
+        margin: 0;
+        border-bottom: none;
+        padding-left: 6px; }
+        .main-menu .nav-menu .nav-menu__item .current .link {
+          color: #ffffff; }
+    .main-menu .nav-menu .nav-menu__item:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 3%;
+      right: 3%;
+      border-bottom: 2px solid #3ba8c0; }
+    .main-menu .nav-menu .nav-menu__item:last-child:after {
+      border-bottom: none; }
+  .main-menu .contacts {
+    color: #ffffff;
+    font-family: 'fira_sansbook', Sans, sans-serif;
+    font-style: normal; }
+    .main-menu .contacts .contacts__header {
       background: #3ba8c0;
-      margin: 0;
-      border-bottom: none;
-      padding-left: 6px; }
-      .main-menu .nav-menu .nav-menu__item .current .link {
-        color: #ffffff; }
-  .main-menu .nav-menu .nav-menu__item:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 3%;
-    right: 3%;
-    border-bottom: 2px solid #3ba8c0; }
-  .main-menu .nav-menu .nav-menu__item:last-child:after {
-    border-bottom: none; }
-.main-menu .contacts {
-  color: #ffffff;
-  font-family: 'fira_sansbook', Sans, sans-serif;
-  font-style: normal; }
-  .main-menu .contacts .contacts__header {
-    background: #3ba8c0;
-    border-radius: 4px 4px 0 0; }
-  .main-menu .contacts .h3 {
-    font-size: 20px;
-    padding: 12px 19px 6px;
-    margin: 0; }
-  .main-menu .contacts .contacts-menu__item {
-    padding: 10px 0 3px 41px; }
-    .main-menu .contacts .contacts-menu__item a {
-      color: #ffffff;
-      margin-left: 10px;
+      border-radius: 4px 4px 0 0; }
+    .main-menu .contacts .h3 {
+      font-size: 20px;
+      padding: 12px 19px 6px;
+      margin: 0; }
+    .main-menu .contacts .contacts-menu__item {
+      padding: 10px 0 3px 41px; }
+      .main-menu .contacts .contacts-menu__item a {
+        color: #ffffff;
+        margin-left: 10px;
+        vertical-align: top;
+        line-height: 1.3; }
+      .main-menu .contacts .contacts-menu__item a:hover {
+        text-decoration: underline; }
+    .main-menu .contacts .contact-icon {
+      display: inline-block;
       vertical-align: top;
-      line-height: 1.3; }
-  .main-menu .contacts .contact-icon {
+      background-image: url(../images/cont.png);
+      line-height: 1.5; }
+    .main-menu .contacts .mail {
+      background-color: #41B9D4;
+      font-size: .9em; }
+      .main-menu .contacts .mail .contact-icon {
+        background-position: 0 0;
+        width: 21px;
+        height: 16px; }
+    .main-menu .contacts .phone {
+      background-color: #48CBE8; }
+      .main-menu .contacts .phone .contact-icon {
+        background-position: 0 -66px;
+        width: 19px;
+        height: 21px; }
+    .main-menu .contacts .skype {
+      background-color: #51DAF8; }
+      .main-menu .contacts .skype .contact-icon {
+        background-position: 0 -137px;
+        width: 20px;
+        height: 19px; }
+    .main-menu .contacts .contacts-menu__item:last-child {
+      border-radius: 0 0 4px 4px; }
+
+.main {
+  width: 68%;
+  position: relative;
+  border-radius: 4px; }
+  .main .box {
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 25px; }
+  .main .h2 {
+    border-bottom: 2px solid #3ba8c0;
+    margin-bottom: 20px;
+    padding: 19px 23px;
     display: inline-block;
-    vertical-align: top;
-    background-image: url(../images/cont.png);
-    line-height: 1.5; }
-  .main-menu .contacts .mail {
-    background-color: #41B9D4; }
-    .main-menu .contacts .mail .contact-icon {
-      background-position: 0 0;
-      width: 21px;
-      height: 16px; }
-  .main-menu .contacts .phone {
-    background-color: #48CBE8; }
-    .main-menu .contacts .phone .contact-icon {
-      background-position: 0 -66px;
-      width: 19px;
-      height: 21px; }
-  .main-menu .contacts .skype {
-    background-color: #51DAF8; }
-    .main-menu .contacts .skype .contact-icon {
-      background-position: 0 -137px;
-      width: 20px;
-      height: 19px; }
-  .main-menu .contacts .contacts-menu__item:last-child {
-    border-radius: 0 0 4px 4px; }
+    color: #3ba8c0; }
+  .main .portrait {
+    float: left;
+    width: 201px;
+    min-height: 200px;
+    margin-left: 23px;
+    margin-top: 15px; }
+  .main .main-info {
+    margin-left: 40px; }
+  .main .info-list__item {
+    margin-bottom: 17px; }
+  .main .skills {
+    display: inline-block;
+    width: 188px;
+    line-height: 2; }
+    .main .skills .skill-item {
+      background-color: #308ca2;
+      background-image: -webkit-linear-gradient(top, #3da8bf 0%, #308ca2 50%, #1e667a 50%, #145c7a 100%);
+      background-image: -moz-linear-gradient(top, #3da8bf 0%, #308ca2 50%, #1e667a 50%, #1e667a 100%);
+      background-image: -o-linear-gradient(top, #3da8bf 0%, #308ca2 50%, #1e667a 50%, #145c7a 100%);
+      background-image: linear-gradient(top, #3da8bf 0%, #308ca2 50%, #1e667a 50%, #145c7a 100%);
+      text-align: center;
+      min-width: 40px;
+      color: #ffffff;
+      font-size: .7em;
+      padding-left: 4px;
+      padding-right: 4px;
+      margin-left: 3px;
+      margin-bottom: 10px;
+      display: inline-block;
+      border: 1px solid #308ca2;
+      border-radius: 4px; }
+
+.about-me .item {
+  padding-right: 70px;
+  margin-bottom: 23px;
+  margin-top: 9px; }
+.about-me .about-icon {
+  background: url(../images/icon-set.png) no-repeat;
+  display: inline-block;
+  width: 41px;
+  margin-left: 20px;
+  margin-bottom: 6px; }
+.about-me .icon-college {
+  background-position: 0 0;
+  height: 23px; }
+.about-me .icon-course {
+  background-position: 8px -73px;
+  height: 32px; }
+.about-me .icon-portfel {
+  background-position: 0 -155px;
+  height: 30px; }
+.about-me .info-block {
+  display: inline-block;
+  margin-left: 15px; }
+  .about-me .info-block .where {
+    font-family: 'fira_sansbook', Sans, sans-serif;
+    font-size: 16px;
+    margin: 0; }
+  .about-me .info-block .period {
+    font-family: 'fira_sanslight', Sans, sans-serif;
+    font-size: 16px;
+    margin: 0; }
