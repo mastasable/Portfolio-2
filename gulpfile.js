@@ -7,7 +7,7 @@ var browserSync = require('browser-sync');
 var reload  = browserSync.reload;
 
 // browser-sync task for starting the server.
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function() { 
     browserSync({
         server: {
             baseDir: "./app"
@@ -37,7 +37,6 @@ gulp.task('html', function(){
     .pipe(reload({stream:true}));
 });
 
-// Default task to be run with `gulp`
 gulp.task('serve', ['sass', 'browser-sync'], function () {
     gulp.watch("app/styles/scss/*.scss", ['sass']);
     gulp.watch('./app/*.html', ['html']);

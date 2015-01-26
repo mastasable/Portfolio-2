@@ -4,29 +4,99 @@
 	<meta charset="UTF-8">
 	<title>About</title>
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
 	<div class="wrapper">
-		<header>Route 66 stones</header>
+		<header class="header">
+			<div class="header-inner">
+				<div class="header-logo left"></div>
+				<ul class="header-menu horizontal right hidden-m">
+					<li class="header-menu__item"></li>
+					<li class="header-menu__item"></li>
+				</ul>
+				<div class="header-menu right visible-m"></div>
+			</div>
+		</header>
+		<div class="gradient-line"></div>
 		<div class="container main-container">
-			<aside class="menu right">
-				<nav class="main-menu">
-					<ul class="menu-vertical">
-						<li class="main-menu__item"><a href=""></a></li>
-						<li class="main-menu__item"><a href=""></a></li>
-						<li class="main-menu__item"><a href=""></a></li>
+			<aside class="main-menu left">
+				<nav class="nav-menu">
+					<ul class="nav-menu vertical">
+						<li class="nav-menu__item"><a href="">zxcxzc</a></li>
+						<li class="nav-menu__item"><a href=""></a></li>
+						<li class="nav-menu__item"><a href=""></a></li>
 					</ul>
 				</nav>
 				<addres class="contacts">
 					<div class="contacts__header">
-						<h2 class="h2">К666акты</h2>
+						<h3 class="h3">К666акты</h2>
 					</div>
+					<ul class="contacts-menu vertical">
+						<li class="contacts-menu__item"><a href=""></a></li>
+						<li class="contacts-menu__item"><a href=""></a></li>
+						<li class="contacts-menu__item"><a href=""></a></li>
+					</ul>
 				</addres>
 			</aside>
+			<div class="main right">
+				<section class="box">
+					<h2 class="h2">Основная информация</h2>
+					<div class="clearfix"></div> <!-- Очищаем флоат -->
+					<img src="/app/images/face.png" alt="Фотография автора" class="portrait left">
+					<dl class="dl-horizontal">
+					  <dt>Меня зовут:</dt>
+					  <dd>Иванов Андрей Степанович</dd>
+					  <dt>Мой возраст:</dt>
+					  <dd>25 лет</dd>
+					  <dt>Мой город:</dt>
+					  <dd>Санкт Петербург, Россия</dd>
+					  <dt>Моя специализация:</dt>
+					  <dd>FRONTEND разработчик</dd>
+					  <dt>Ключевые навыки:</dt>
+					  <dd class="skills">
+						  <span class="skill-item">html</span>
+						  <span class="skill-item">css</span>
+						  <span class="skill-item">javascript</span>
+					      <span class="skill-item">gulp</span>
+				    	  <span class="skill-item">git</span>
+					  </dd>
+					</dl>                  		
+				</section>
+				<section class="box">
+					<div class="item">
+						<h2 class="h2">Опыт Работы</h2>
+						<div class="about-icon icon-portfel"></div>
+						<h4 class="h4"></h4>
+						<p></p>
+					</div>
+				</section>
+				<section class="box">
+					<div class="item">
+						<h2 class="h2">Опыт Работы</h2>
+						<div class="about-icon icon-portfel"></div>
+						<h4 class="h4"></h4>
+						<p></p>
+					</div>
+					<div class="item">
+						<h2 class="h2">Опыт Работы</h2>
+						<div class="about-icon icon-portfel"></div>
+						<h4 class="h4"></h4>
+						<p></p>
+					</div>
+					<div class="item">
+						<h2 class="h2">Опыт Работы</h2>
+						<div class="about-icon icon-portfel"></div>
+						<h4 class="h4"></h4>
+						<p></p>
+					</div>
+				</section>
+			</div>
 		</div>
-	</div>	
-	<footer>
-		
+	</div>
+	<div class="gradient-line"></div>	
+	<footer class="footer">
+		<p class="footer-copyright"></p>		
 	</footer>
 
 	<script src="scripts/main.js"></script>
