@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-inner">
+				<div class="header-logo left">
+					<a href="loftschool.ru">
+						<img src="images/logo.png" alt="loftschool">
+					</a>
+				</div>
+				<ul class="header-menu horizontal right hidden-m">
+					<li class="header-menu__item menu-item">
+						<a href="vk.com" class="vk header-menu__link">
+						</a>
+					</li>
+					<li class="header-menu__item menu-item">
+						<a href="github.com" class="github header-menu__link">
+						</a>
+					</li>
+				</ul>
+				<div class="header-menu right visible-m">
+					<span class="hamburger"></span>
+					<span class="hamburger"></span>
+					<span class="hamburger"></span>
+				</div>
+			</div>
+			<div class="gradient-line"></div>
+		</header>
+		
+		<div class="container main-container">
+			<aside class="main-menu left">
+				<nav class="nav-menu">
+					<ul class="nav-menu vertical">
+						<li class="nav-menu__item"><a href="index.html" class="link">Обо мне</a></li>
+						<li class="nav-menu__item"><a href="contact-me.html" class="link">Мои работы</a></li>
+						<li class="nav-menu__item"><a href="/" class="link">Связаться со мной</a></li>
+					</ul>
+				</nav>
+				<addres class="contacts">
+					<div class="contacts__header">
+						<h3 class="h3">Контакты</h2>
+					</div>
+					<ul class="contacts-menu vertical">
+						<li class="contacts-menu__item mail">
+							<span class="contact-icon"></span>
+							<a href="">masta.sable@gmail.com</a>
+						</li>
+						<li class="contacts-menu__item phone">
+							<span class="contact-icon"></span>
+							<a href="">+79269612210</a>
+						</li>
+						<li class="contacts-menu__item skype">
+							<span class="contact-icon"></span>
+							<a href="">masta.sable</a>
+						</li>
+					</ul>
+				</addres>
+			</aside>
+			<div class="main contact-me right"> 
+			  <section class="box">
+			    <div class="sec-header">
+			      <h2 class="h2">У вас интересный проект? Напишите мне!</h2>
+			    </div> 
+			    <form id="contact-me" class="form" role="form">   
+			      <!-- Вывод сообщений с сервера -->
+			      <div class="server-mes error-mes"></div>
+			      <div class="server-mes success-mes"></div>
+			      <!-- Имя и email в одну строку, для этого обернем в div.form-line -->
+			      <div class="form-line">
+			        <!-- Имя -->
+			        <div class="form-group pull-left">
+			          <label for="name" class="label">Имя</label>
+			          <input type="text" name="name" class="input" id="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
+			        </div>
+			        <!-- Email -->
+			        <div class="form-group pull-right">
+			          <label for="email" class="label">Email</label>
+			          <input type="email" name="email" class="input" id="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email">
+			        </div>
+			      </div>
+			      <!-- Сообщение -->
+			      <div class="form-group">
+			        <label for="message" class="label">Сообщение</label>
+			        <textarea name="message" id="message" class="textarea" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+			      </div>
+			      <!-- Капча -->
+			      <div class="form-group captcha-wrap">
+			        <label for="captcha" class="label">Введите код, указанный на картинке</label>
+			        <img src="/app/captcha.php" alt="код" class="captcha pull-left"/>
+			        <input type="text" name="captcha" class="input input-captcha pull-right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+			      </div>
+			      <!-- Кнопка "Отправить" -->
+			      <div class="button-group">
+			        <button type="submit" class="btn">Отправить</button>
+			        <button type="reset" class="btn btn-res right">Очистить</button>
+			      </div>      
+			    </form>            
+			  </section>           
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="gradient-line"></div>
+		<p class="footer-copyright">&copy;2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>		
+	</footer>
+
+	<script src="scripts/jquery-1.11.2"></script>
+	<script src="scripts/main.js"></script>
+	
+</body>
+</html>
