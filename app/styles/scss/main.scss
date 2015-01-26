@@ -12,6 +12,8 @@
 }
 
 $background: #eff3f7;
+$light-blue: #3ba8c0;
+$gray: #959aa8;
 
 body, html{
 	height: 100%;
@@ -21,6 +23,10 @@ body, html{
 body{
 	background: url(../images/background.png) repeat;
 	font-family: 'fira_sansbook', Sans, sans-serif;
+}
+
+a{
+	text-decoration: none;
 }
 
 p{
@@ -76,6 +82,11 @@ ul{
 	display: inline-block;
 	}
 }
+.vertical{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
 
 .clearfix:before, 
 .clearfix:after, 
@@ -121,6 +132,7 @@ ul{
 .header{
 	height: 120px;
 	background-color: $background;
+	margin-bottom: 40px;
 	.header-inner{
 		max-width: 1140px;
 		margin: auto;
@@ -140,15 +152,56 @@ ul{
 					width: 100%;
 				}
 				.vk{
-					background: url(../images/vk.png);
+					background: url(../images/vk.png) no-repeat;
 				}
 				.github{
-					background: url(../images/github.png);
+					background: url(../images/github.png) no-repeat;
 				}
 			}
 			.header-menu__item:first-child{
 				margin-left: 0;
 			}
+		}
+	}
+}
+
+.main-menu{
+	.nav-menu{
+		border-radius: 4px;
+		overflow: hidden;
+		.nav-menu__item{
+			position: relative;
+			padding: 20px 4px;
+			background-color: $background;
+			.link{
+				font-size: 20px;
+				color: $gray;
+				margin-left: 20px;
+			}
+			.link:hover{
+				color: $light-blue;
+			}
+			.current{
+				background: $light-blue;
+				margin: 0;
+				border-bottom: none;
+				padding-left: 6px;
+				.link{
+					color: #ffffff;
+				}
+			}
+		}
+		.nav-menu__item:after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 3%;
+			right: 3%;
+			border-bottom: 2px solid $light-blue;
+		}
+		.nav-menu__item:last-child:after{
+			border-bottom: none;
 		}
 	}
 }
