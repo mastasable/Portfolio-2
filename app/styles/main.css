@@ -120,7 +120,8 @@ ul {
 
 .main-menu .nav-menu {
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 20px; }
   .main-menu .nav-menu .nav-menu__item {
     position: relative;
     padding: 20px 4px;
@@ -148,3 +149,46 @@ ul {
     border-bottom: 2px solid #3ba8c0; }
   .main-menu .nav-menu .nav-menu__item:last-child:after {
     border-bottom: none; }
+.main-menu .contacts {
+  color: #ffffff;
+  font-family: 'fira_sansbook', Sans, sans-serif;
+  font-style: normal; }
+  .main-menu .contacts .contacts__header {
+    background: #3ba8c0;
+    border-radius: 4px 4px 0 0; }
+  .main-menu .contacts .h3 {
+    font-size: 20px;
+    padding: 12px 19px 6px;
+    margin: 0; }
+  .main-menu .contacts .contacts-menu__item {
+    padding: 10px 0 3px 41px; }
+    .main-menu .contacts .contacts-menu__item a {
+      color: #ffffff;
+      margin-left: 10px;
+      vertical-align: top;
+      line-height: 1.3; }
+  .main-menu .contacts .contact-icon {
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(../images/cont.png);
+    line-height: 1.5; }
+  .main-menu .contacts .mail {
+    background-color: #41B9D4; }
+    .main-menu .contacts .mail .contact-icon {
+      background-position: 0 0;
+      width: 21px;
+      height: 16px; }
+  .main-menu .contacts .phone {
+    background-color: #48CBE8; }
+    .main-menu .contacts .phone .contact-icon {
+      background-position: 0 -66px;
+      width: 19px;
+      height: 21px; }
+  .main-menu .contacts .skype {
+    background-color: #51DAF8; }
+    .main-menu .contacts .skype .contact-icon {
+      background-position: 0 -137px;
+      width: 20px;
+      height: 19px; }
+  .main-menu .contacts .contacts-menu__item:last-child {
+    border-radius: 0 0 4px 4px; }
