@@ -91,6 +91,30 @@
 		<div class="gradient-line"></div>
 		<p class="footer-copyright">&copy;2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>		
 	</footer>
+	<div id="modal">
+        <div class="modal-head">
+            Добавление проекта
+            <div id="modal_close"></div>
+        </div>
+            <form class="form">
+                <label for="project-name">Название проекта</label>
+                <input type="text" id="project-name" placeholder="Введите название"/>
+                <label for="upload-image">Выберите картинку</label>
+                <div class="file-upload">
+                    <button type="button"><img src="img/upload.png" alt=""/></button>
+                    <div>Загрузите изображение</div>
+                    <input type="file" id="upload-image"/>
+                </div>
+                <label for="project-url">URL проекта</label>
+                <input type="text" id="project-url" placeholder="Добавьте ссылку"/>
+                <label for="project-info">Описание</label>
+                <textarea name="" id="project-info" cols="6" rows="5" placeholder="Пара слов о вашем проекте"></textarea>
+            </form>
+            <div id="btn-add-project">
+                <button class="btn" type="submit">Добавить</button>
+            </div>
+    </div>
+    <div id="overlay"></div>
 
 	
 	<script src="scripts/jquery-1.11.2.js"></script>
