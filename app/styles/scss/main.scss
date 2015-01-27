@@ -125,7 +125,7 @@ input, textarea, button {
 .input, .textarea{
 	font-size: 12px;
 	width: 100%;
-	padding: 6px 12px;	
+	padding: 6px 12px;  
 }
 .textarea{
 	resize: none;
@@ -139,7 +139,7 @@ input, textarea, button {
 	background-color: rgb(72, 203, 232);
 	height: 33px;
 	border:solid #3ba8c0;
-	border-width: 0 0 2px 0;	
+	border-width: 0 0 2px 0;    
 	color: #f6f6f6;
 	font-family: 'fira_sansbook';
 	font-size: 20px;
@@ -161,7 +161,7 @@ input, textarea, button {
 	transform: translate(1px,2px);
 }
 .input {
-	display: block;	
+	display: block; 
 	height: 41px;
 	color: #48cbe8;
 	background-color: #fff;
@@ -186,7 +186,7 @@ input, textarea, button {
 .textarea{
 	display: block;
 	width: 100%;
-	height: 110px;	
+	height: 110px;  
 	color: #48cbe8;
 	border: 1px solid rgb(72, 203, 232);
 	border-radius: 4px;
@@ -197,13 +197,13 @@ input, textarea, button {
 	font-size: 12px;
 	width: 100%;
 	padding: 6px 12px;
-	margin-bottom: 6px;	
+	margin-bottom: 6px; 
 	display: none;
 }
-.error-mes{	
+.error-mes{ 
 	background-color: #fad2d1;
 	border-color: #f97e76;
-	color: #f97e76;	
+	color: #f97e76; 
 }
 .success-mes{
 	background-color: #b8e1ce;
@@ -212,19 +212,19 @@ input, textarea, button {
 }
 /* placeholder */
 *::-webkit-input-placeholder {
-    color: #48cbe8;
+	color: #48cbe8;
 }
 *:-moz-placeholder {
-    /* FF 4-18 */
-    color: #48cbe8;
+	/* FF 4-18 */
+	color: #48cbe8;
 }
 *::-moz-placeholder {
-    /* FF 19+ */
-    color: #48cbe8;
+	/* FF 19+ */
+	color: #48cbe8;
 }
 *:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #48cbe8;
+	/* IE 10+ */
+	color: #48cbe8;
 }
 
 /* _____________ плавное изменение прозрачности  placeholder-а при фокусе _________ */
@@ -282,14 +282,14 @@ input, textarea, button {
 //gradient-line
 .gradient-line{
 	  height: 2px;
-    background: #edf1f5; /* Old browsers */
-    background: -moz-linear-gradient(left,  #edf1f5 0%, #1e667a 50%, #e5edf1 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#edf1f5), color-stop(50%,#1e667a), color-stop(100%,#e5edf1)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* IE10+ */
-    background: linear-gradient(to right,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf1f5', endColorstr='#e5edf1',GradientType=1 ); /* IE6-9 */
+	background: #edf1f5; /* Old browsers */
+	background: -moz-linear-gradient(left,  #edf1f5 0%, #1e667a 50%, #e5edf1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#edf1f5), color-stop(50%,#1e667a), color-stop(100%,#e5edf1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* IE10+ */
+	background: linear-gradient(to right,  #edf1f5 0%,#1e667a 50%,#e5edf1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edf1f5', endColorstr='#e5edf1',GradientType=1 ); /* IE6-9 */
 }
 
 //header
@@ -379,7 +379,7 @@ input, textarea, button {
 		font-style: normal;
 		.contacts__header{
 			background: $light-blue;
-			border-radius: 4px 4px 0 0;	
+			border-radius: 4px 4px 0 0; 
 		}
 		.h3{
 			font-size: 20px;
@@ -392,7 +392,7 @@ input, textarea, button {
 			color: $white;
 			margin-left: 10px;
 			vertical-align: top;
-			line-height: 1.3;	
+			line-height: 1.3;   
 			}
 			a:hover{
 				text-decoration: underline;
@@ -453,11 +453,11 @@ input, textarea, button {
 		color: $light-blue;
 	}
 	.portrait{
-	    float: left;
-	    width: 201px;
-	    min-height: 200px;
-	    margin-left: 23px;
-	    margin-top: 15px;
+		float: left;
+		width: 201px;
+		min-height: 200px;
+		margin-left: 23px;
+		margin-top: 15px;
 	}
 	.main-info{
 		margin-left: 40px;
@@ -480,18 +480,18 @@ input, textarea, button {
 			background-image: linear-gradient(top, #3da8bf 0%, #308ca2 50%, #1e667a
 			50%, #145c7a 100%);
 			text-align: center;
-		    min-width: 40px;
-		    color: $white;
-		    font-size: .7em;
-		    padding-left: 4px;
-		    padding-right: 4px;
-		    margin-left: 3px;
-		    margin-bottom: 10px;
-		    display: inline-block;
-		    border: 1px solid #308ca2;
-		    border-radius: 4px;
+			min-width: 40px;
+			color: $white;
+			font-size: .7em;
+			padding-left: 4px;
+			padding-right: 4px;
+			margin-left: 3px;
+			margin-bottom: 10px;
+			display: inline-block;
+			border: 1px solid #308ca2;
+			border-radius: 4px;
 		}
-	}	
+	}   
 }
 
 .about-me{
@@ -557,7 +557,7 @@ input, textarea, button {
 			transform: scale(0);
 			-webkit-transform: scale(0);
 			transition: all .5s ease-in-out;
-			-webkit-transition: all .5s ease-in-out;	
+			-webkit-transition: all .5s ease-in-out;    
 		}
 		a{
 			color: $light-blue;
@@ -569,7 +569,7 @@ input, textarea, button {
 			font-size: 15px;
 			margin: 5px 0;
 			line-height: 1.2;
-		}	
+		}   
 	}
 	.item:hover{
 		img{
@@ -578,7 +578,7 @@ input, textarea, button {
 			filter: alpha(opacity=20);
 		}
 		.hover-img{
-			background-color: #016CA4	
+			background-color: #016CA4   
 		}
 	}
 	.add-new-item{
@@ -606,15 +606,15 @@ input, textarea, button {
 	.add-new-item:hover{
 		.icon-add{
 			animation: moveFromBottom 500ms ease;
-		    -moz-animation: moveFromBottom 500ms ease;
-		    -ms-animation: moveFromBottom 500ms ease;
+			-moz-animation: moveFromBottom 500ms ease;
+			-ms-animation: moveFromBottom 500ms ease;
 				-webkit-animation: moveFromBottom 500ms ease;
 		}
 		span{
 			animation: moveFromBottom 600ms ease;
-		    -moz-animation: moveFromBottom 600ms ease;
-		    -ms-animation: moveFromBottom 600ms ease;
-				-webkit-animation: moveFromBottom 600ms ease;	
+			-moz-animation: moveFromBottom 600ms ease;
+			-ms-animation: moveFromBottom 600ms ease;
+				-webkit-animation: moveFromBottom 600ms ease;   
 		}
 	}
 }
@@ -625,18 +625,18 @@ input, textarea, button {
 	border-bottom: 17px solid #67dffa;
 	padding: 20px 16px 13px;
 	border-radius: 5px 5px 0 0;
-	text-align: center;	
+	text-align: center; 
 	}
 	.h2{
 		font-family: 'fira_sansbook', Sans, sans-serif;
 	font-size: 27px;
 	color: $white;
 	border: none;
-	margin: 10px;	
+	margin: 10px;   
 	}
 	.form{
 		width: 376px;
-		margin: 40px auto;	
+		margin: 40px auto;  
 	}
 	.input{
 		height: 28px;
@@ -665,7 +665,7 @@ input, textarea, button {
 	}
 	.button-group{
 		clear: both;
-		margin-top: 20px;	
+		margin-top: 20px;   
 	}
 .btn-res{
 	background: #849db5;
@@ -677,7 +677,7 @@ input, textarea, button {
 .footer{
 	width: 100%;
 	margin-top: -50px;
-	height: 50px;	
+	height: 50px;   
 	text-align: center;
 	background: $background;
 	position: relative;
@@ -685,22 +685,22 @@ input, textarea, button {
 }
 
 #modal{
-    width: 363px;
-    border-radius: 5px;
-    position: fixed;
-    display: none;
-    opacity: 0;
-    top:50%;
-    left: 50%;
-    margin-top: -240px;
-    margin-left: -180px;
-    z-index: 5;
-    overflow: hidden;
-    box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
-    .modal-wrapper{
+	width: 363px;
+	border-radius: 5px;
+	position: fixed;
+	// display: none;
+	// opacity: 0;
+	top:50%;
+	left: 50%;
+	margin-top: -240px;
+	margin-left: -180px;
+	z-index: 5;
+	overflow: hidden;
+	box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
+	.modal-wrapper{
 		background: $background;
 		border-radius: 5px;
-		width: 364px;	
+		width: 364px;   
 	}
 	.modal-header{
 		background: #48cbe8;
@@ -709,7 +709,7 @@ input, textarea, button {
 		border-radius: 5px 5px 0 0;
 	}
 	.modal-body{
-		padding: 7px 22px;	
+		padding: 7px 22px;  
 	}
 	.modal-title{
 		font-size: 23px;
@@ -732,45 +732,59 @@ input, textarea, button {
 		border: 0;
 	}
 	.fileupload-wrapper {
+	  height: 45px;
 	  width: 100%;
 	  position: relative;
+	  overflow: hidden;
 	}
-	.fileupload-wrapper #fileupload {
+	.fileupload-wrapper .btn-fileupload {
 	  height: 100%;
 	  position: absolute;
-	  z-index: 99;
 	  right: 0;
-	  margin-top: 4px;
-	}
-	.fileupload-wrapper #fileupload:after {
-	  content: "";
-	  display: block;
-	  width: 52px;
-	  height: 41px;
+	  border: none;
+	  border-radius: 0 4px 4px 0;
 	  background: url(../images/upload.png) 10px 7px no-repeat;
 	  background-color: #48cbe8;
-	  position: absolute;
-	  top: -4px;
-	  right: 0;
-	  border-radius: 0 4px 4px 0;
+	  width: 52px;
+	  height: 41px;
 	}
-	#fileupload{
-		width: 52px;
+	.fileupload-input{
+		position: absolute;
+		left: 0;
 		top: 0;
+		width: 100%;
+		height: 100%;
+		transform: scale(20);
+		letter-spacing: 10em;     /* IE 9 fix */
+		    -ms-transform: scale(20); /* IE 9 fix */
+		opacity: 0;
+		cursor: pointer
 	}
+	.fileupload-placeholder{
+		border: #48cbe8 solid 1px;
+		border-radius: 4px 0 0 4px;
+		background-color: $white;
+		width: 270px;
+		height: 41px;
+		color: #48cbe8;
+		font-size: 12px;
+		padding-left: 12px;
+		padding-top: 10px;
+	}
+
 }
 
 #overlay{
-    z-index: 3;
-    position: fixed;
-    background-color: #3b3d4b;
-    opacity: 0.8;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    display: none;
+	z-index: 3;
+	position: fixed;
+	background-color: #3b3d4b;
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
 }
 
 
@@ -779,22 +793,22 @@ input, textarea, button {
 
 @-webkit-keyframes moveFromBottom {
 	from { -webkit-transform: translateY(200%); opacity: 0;}
-    to { -webkit-transform: translateY(0%) scale(1); opacity: 1;}
+	to { -webkit-transform: translateY(0%) scale(1); opacity: 1;}
 }
 
 @-moz-keyframes moveFromBottom {
-    from { -moz-transform: translateY(200%); opacity: 0;}
-    to { -moz-transform: translateY(0%); opacity: 1;}
+	from { -moz-transform: translateY(200%); opacity: 0;}
+	to { -moz-transform: translateY(0%); opacity: 1;}
 }
 @-ms-keyframes moveFromBottom {
-    from { -ms-transform: translateY(200%); opacity: 0;}
-    to { -ms-transform: translateY(0%); opacity: 1;}
+	from { -ms-transform: translateY(200%); opacity: 0;}
+	to { -ms-transform: translateY(0%); opacity: 1;}
 }
 @-o-keyframes moveFromBottom {
 	from { -o-transform: translateY(200%); opacity: 0;}
-    to { -o-transform: translateY(0%); opacity: 1;}
+	to { -o-transform: translateY(0%); opacity: 1;}
 }
 @keyframes moveFromBottom {
 	from { transform: translateY(200%); opacity: 0;}
-    to { transform: translateY(0%); opacity: 1;}
+	to { transform: translateY(0%); opacity: 1;}
 }
