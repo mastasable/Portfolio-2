@@ -27,10 +27,26 @@ gulp.task('sass', function () {
 // process JS files and return the stream.
 gulp.task('js', function () {
     return gulp.src('./app/scripts/*.js')
-        .pipe($.concat())
         .pipe($.uglify())
         .pipe(gulp.dest('dist/js'));
 });
+
+gulp.task('concatCss', function  () {
+    gulp.src('./app/styles/*.css')
+        .pipe($.concatCss('styles.css'))
+        .pipe(gulp.dest('./app/styles'));
+})
+gulp.task('minify-css', function() {
+  gulp.src('./app/styles/styles.css')
+    .pipe($.minifyCss())
+    .pipe(gulp.dest('./dist/styles'));
+});
+
+gulp.task('images', function(){
+    gulp.src('./app/images')
+        .pipe($.imagemin())
+        .pipe(gulp.dest('./dist/images'))
+})
 
 gulp.task('html', function(){
   gulp.src('./app/*.html')
@@ -42,3 +58,5 @@ gulp.task('serve', ['sass', 'browser-sync'], function () {
     gulp.watch('./app/*.html', ['html']);
     gulp.watch("js/*.js", ['js', browserSync.reload]);
 });
+
+gulp.task('default', ['js', 'sass', 'concatCss', 'minify-css']);

@@ -338,7 +338,7 @@ input, textarea, button {
 		border-radius: 4px;
 		overflow: hidden;
 		margin-bottom: 20px;
-		.nav-menu__item{
+		li{
 			position: relative;
 			padding: 20px 4px;
 			background-color: $background;
@@ -350,17 +350,8 @@ input, textarea, button {
 			.link:hover{
 				color: $light-blue;
 			}
-			.current{
-				background: $light-blue;
-				margin: 0;
-				border-bottom: none;
-				padding-left: 6px;
-				.link{
-					color: $white;
-				}
-			}
 		}
-		.nav-menu__item:after{
+		li:after{
 			content: '';
 			display: block;
 			position: absolute;
@@ -369,8 +360,17 @@ input, textarea, button {
 			right: 3%;
 			border-bottom: 2px solid $light-blue;
 		}
-		.nav-menu__item:last-child:after{
+		li:last-child:after{
 			border-bottom: none;
+		}
+		.current{
+			background: $light-blue;
+			margin: 0;
+			border-bottom: none;
+			padding-left: 6px;
+			.link{
+				color: $white;
+			}
 		}
 	}
 	.contacts{
@@ -559,6 +559,14 @@ input, textarea, button {
 			transition: all .5s ease-in-out;
 			-webkit-transition: all .5s ease-in-out;    
 		}
+		.zoom{
+			font-family: 'fira_sansbook';
+			border: solid 3px #eff3f7;
+			color: #eff3f7;
+			text-decoration: none;
+			border-radius: 5px;	
+			padding: 0 4px	;
+		}
 		a{
 			color: $light-blue;
 			font-family: 'fira_sanslight', Sans, sans-serif;
@@ -579,6 +587,10 @@ input, textarea, button {
 		}
 		.hover-img{
 			background-color: #016CA4   
+		}
+		.zoom-wrapper{
+			transform: scale(1);
+			-webkit-transform: scale(1);
 		}
 	}
 	.add-new-item{
