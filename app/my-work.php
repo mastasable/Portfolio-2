@@ -25,7 +25,7 @@ include_once 'tmpl/head.php'
 									<a href="" class="zoom" target="_blank">site.ru</a>
 								</div>
 							</div>
-							<a href="" target="_blank">kkdsb skdjgsdj</a>
+							<a href="" target="_blank">lorem ipsum</a>
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 						</div>
 						<a href="#" class="item add-new-item">

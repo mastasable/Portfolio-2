@@ -86,7 +86,7 @@
 
 				if(val.length == 0){
 					element.addClass('has-error');
-					app.creareQtip(element, pos);
+					app.createQtip(element, pos);
 					valid = false;
 				}
 			});
@@ -95,6 +95,89 @@
 		},
 
 		// Создаёт тултипы
+			createQtip: function (element, position) {
+				console.log('Создаем тултип');
+
+				// позиция тултипа
+				if (position === 'right') {
+				position = {
+					my: 'left center', 
+					at: 'right center'
+				}
+				}else{
+				position = {
+					my: 'right center', 
+					at: 'left center',
+					adjust: {
+					method: 'shift none'
+					}
+				}
+				}
+
+				// инициализация тултипа
+				element.qtip({
+				content: {
+					text: function() {
+					return $(this).attr('qtip-content');
+					}
+				},
+				show: {
+					event: 'show'
+				},
+				hide: {
+					event: 'keydown hideTooltip'
+				},
+				position: position,
+				style: {
+					classes: 'qtip-mystyle qtip-rounded',
+					tip: {
+					height: 10,
+					width: 16
+					}
+				}
+				}).trigger('show');
+			},
+
+		ajaxForm: function (form, url){
+
+			if(!app.validateForm(form)) return false;
+			var data = form.serialize();
+
+			return $.ajax({
+				type: 'POST',
+				url: url,
+				dataType: 'JSON',
+				data: data
+			}).fail(function(ans){
+				console.log('Проблемы в PHP');
+				form.find('.error-mes')
+					.text('На серевере произошла ошибка')
+					.show();
+			});
+		},
+
+		contactMe: function  (ev) {
+			console.log('Работаем с формой связи');
+			ev.preventDefault();
+
+			var form = $(this);
+			var url = './app/send_mail.php';
+			var defObject = app.ajaxForm(form, url);
+
+			if (defObject){
+				defObject.done(function(ans){
+					var mes = ans.mes;
+					var status = ans.status;
+
+					if (status === 'OK'){
+						form.trigger('reset');
+						form.find('success-mes').text(mes).show();
+					} else {
+						form.find('error-mes').text(mes).show();
+					}
+				});
+			}
+		},
 
 		// Универсальная функция очистки формы
 		clearForm: function(form) {
