@@ -245,8 +245,11 @@ input, textarea, button {
 .textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.4s ease;}
 .textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.4s ease;}
 .textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.4s ease;}
-/* _____________ // Элементы форм _________ */
 
+//подсветка форм при hover
+.input:hover, .textarea:hover, .input:focus, .textarea:focus{
+	border-color: $light-blue;
+}
 
 /* _____________ // file upload _________ */
 .fileupload-wrapper {
@@ -365,12 +368,14 @@ input, textarea, button {
 		}
 		.current{
 			background: $light-blue;
-			margin: 0;
-			border-bottom: none;
+			margin-top: -2px;
 			padding-left: 6px;
 			.link{
 				color: $white;
 			}
+		}
+		.current:after{
+			border-bottom: none!important;
 		}
 	}
 	.contacts{

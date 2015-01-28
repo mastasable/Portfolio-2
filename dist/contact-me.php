@@ -18,7 +18,7 @@ include_once 'tmpl/head.php'
 			    <div class="sec-header">
 			      <h2 class="h2">У вас интересный проект? Напишите мне!</h2>
 			    </div> 
-			    <form id="contact-me" class="form" role="form">   
+			    <form id="contact-me" class="form" role="form" action="">   
 			      <div class="server-mes error-mes"></div>
 			      <div class="server-mes success-mes"></div>
 			      <div class="form-line">
@@ -41,7 +41,7 @@ include_once 'tmpl/head.php'
 			        <input type="text" name="captcha" class="input input-captcha right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
 			      </div>
 			      <div class="button-group">
-			        <button type="submit" class="btn">Отправить</button>
+			        <button id="send" type="submit" class="btn">Отправить</button>
 			        <button type="reset" class="btn btn-res right">Очистить</button>
 			      </div>      
 			    </form>            
