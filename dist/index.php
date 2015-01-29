@@ -73,7 +73,7 @@ include_once 'tmpl/head.php'
 	<?php
 		include_once "tmpl/footer.php"
 	?>
-	<script src="scripts/jquery-1.11.2"></script>
+	<script src="scripts/jquery-1.11.2.js"></script>
 	<script scr="scripts/html5shiv.js"></script>
 	<script src="scripts/main.js"></script>
 	

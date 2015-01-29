@@ -37,7 +37,7 @@ include_once 'tmpl/head.php'
 			      </div>
 			      <div class="form-group captcha-wrap">
 			        <label for="captcha" class="label">Введите код, указанный на картинке</label>
-			        <img src="/app/captcha.php" alt="код" class="captcha left"/>
+			        <img src="captcha.php" alt="код" class="captcha left"/>
 			        <input type="text" name="captcha" class="input input-captcha right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
 			      </div>
 			      <div class="button-group">
@@ -54,7 +54,9 @@ include_once 'tmpl/head.php'
 		include_once("tmpl/footer.php") 
 	?>
 
-	<script src="scripts/jquery-1.11.2"></script>
+	<script src="scripts/jquery-1.11.2.js"></script>
+	<script src="scripts/jquery.qtip.js"></script>
+	<script scr="scripts/html5shiv.js"></script>
 	<script src="scripts/main.js"></script>
 	
 </body>

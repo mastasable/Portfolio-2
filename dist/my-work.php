@@ -83,6 +83,7 @@ include_once 'tmpl/head.php'
 
 	
 	<script src="scripts/jquery-1.11.2.js"></script>
+	<script src="scripts/jquery.qtip.js"></script>
 	<script scr="scripts/html5shiv.js"></script>
 	<script src="scripts/main.js"></script>
 </body>

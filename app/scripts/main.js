@@ -6,8 +6,6 @@
 
 			this.setUpListeners();
 
-			// // TODO: only in ie
-			// $('input, textarea').placeholder();
 		},
 
 		// Включаем прослушку событий
@@ -17,6 +15,7 @@
 			$('.add-new-item').on('click', app.showModal);
 			$('.b-close, #overlay').on('click', app.closeModal);
 			$('#contact-me').on('submit', app.contactMe);
+			$('form').on('keydown', '.has-error', app.removeError);
 		},
 
 		//Вызывает модальное окно
@@ -161,7 +160,7 @@
 			ev.preventDefault();
 
 			var form = $(this);
-			var url = './app/send_mail.php';
+			var url = 'send_mail.php';
 			var defObject = app.ajaxForm(form, url);
 
 			if (defObject){
@@ -188,6 +187,13 @@
 			form.find('.has-error').removeClass('has-error'); // удаляем красную подсветку
 			form.find('.error-mes, success-mes').text('').hide(); // очищаем и прячем сообщения с сервера
 		},
+
+		// Убирает красную обводку у элементов форм
+		removeError: function() {
+		  console.log('Красная обводка у элементов форм удалена');
+
+		  $(this).removeClass('has-error');
+		}
 	}
 
 	app.initialize();

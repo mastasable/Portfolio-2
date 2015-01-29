@@ -28,7 +28,7 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
     return gulp.src('./app/scripts/*.js')
         .pipe($.uglify())
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('concatCss', function  () {
